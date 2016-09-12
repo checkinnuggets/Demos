@@ -1,0 +1,22 @@
+﻿@model ShortlistManager.Web.Models.LogInModel
+@{
+    ViewBag.Title = "Log In";
+}
+
+<h2>Log In</h2>
+
+@Html.ValidationSummary(true)
+
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        @Html.LabelFor(x=>x.UserName)
+        @Html.EditorFor(x=>x.UserName, null, new { htmlAttributes = new { @class="form-control", placeholder= "UserName" } })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(x => x.Password)
+        @Html.EditorFor(x => x.Password, null, new { htmlAttributes = new { @class="form-control", placeholder="Password" } } )
+    </div>
+
+    <button type="submit" class="btn btn-default">Log In</button>
+}

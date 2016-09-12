@@ -1,0 +1,10 @@
+﻿@model DateTime?
+
+@if (Model.HasValue)
+{
+    <text>@Model.Value.ToString(Formats.DateFormat)</text>
+}
+else
+{
+    <text>(not set)</text>
+}

@@ -1,0 +1,30 @@
+﻿<div ng-controller="ListingCtrl">
+
+    <div class="search-box-container">
+        <span class="col-md-1 search-box-title">Search</span>
+        <span class="col-md-3">
+            <input type="text" class="form-control" ng-model="searchKeyword" />
+        </span>
+    </div>
+
+    <table class="table ng-cloak">
+        <tr>
+            <th> <a href="" ng-click="orderByField='firstName'; reverseSort = !reverseSort">First Name</a> </th>
+            <th> <a href="" ng-click="orderByField='surname'; reverseSort = !reverseSort">Surname</a> </th>
+            <th> <a href="" ng-click="orderByField='clubName'; reverseSort = !reverseSort">Club</a> </th>
+            <th> <a href="" ng-click="orderByField='dateOfBirth'; reverseSort = !reverseSort">Date of Birth</a> </th>
+            <th>&nbsp;</th>
+        </tr>
+        <tr ng-repeat="p in playerList | filter: searchKeyword | orderBy:orderByField:reverseSort">
+            <td>{{p.firstName}}</td>
+            <td>{{p.surname}}</td>
+            <td>{{p.clubName}}</td>
+            <td>{{p.dateOfBirth | date : "dd MMM yyyy"}}</td>
+            <td>
+                <a href="#/form/{{p.id}}" class="btn btn-default">Edit</a>
+                <input type="button" value="Remove" class="btn btn-default" ng-click="removeRow(p.id)" />
+            </td>
+        </tr>
+    </table>
+    <a href="#/form" class="btn btn-default">Add Record</a>
+</div>

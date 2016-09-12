@@ -1,0 +1,10 @@
+﻿@model IEnumerable<ShortlistManager.Services.Models.PlayerDto>
+
+<div style="margin-top: 32px;">
+    @Html.Partial("_Table", Model)
+</div>
+
+<p>
+    <a class="btn btn-default" href="@Url.Action("Edit")">Add</a>
+</p>
+

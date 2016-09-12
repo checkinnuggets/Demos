@@ -1,0 +1,9 @@
+﻿@using ShortlistManager.Web.Infrastructure
+@model DateTime?
+
+@{
+    var attemptedValue = ModelStateHelper.GetAttemptedValue(Html.ViewData.ModelState, Html.NameForModel().ToString());
+    var modelValue = Model.HasValue ? Model.Value.ToString(Formats.DateFormat) : string.Empty;
+}
+
+<input id="@Html.IdForModel()" name="@Html.NameForModel()" type="text" value="@(attemptedValue ?? modelValue)" class="form-control datepicker" />
