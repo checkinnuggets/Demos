@@ -12,8 +12,8 @@ This system allows the scout to record the name of the player, the club they pla
 - Angular JS
 
 ### Additional Frameworks 
-- FluentValidation (Url)
-- MomentJs (url)
+- FluentValidation (<https://github.com/JeremySkinner/FluentValidation>)
+- MomentJs (<http://momentjs.com/>)
 
 ## Concepts Demonstrated
 
@@ -27,7 +27,6 @@ This system allows the scout to record the name of the player, the club they pla
 - Validation of model independent of structure
 
 ### Angular JS
-- 
 - Client side sorting and filtering of the data
 - Directive to handle dates
 
