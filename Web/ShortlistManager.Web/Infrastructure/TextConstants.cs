@@ -1,4 +1,4 @@
-﻿namespace ShortlistManager.Web
+﻿namespace ShortlistManager.Web.Infrastructure
 {
     public static class TextConstants
     {

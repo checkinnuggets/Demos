@@ -1,4 +1,5 @@
-﻿@if (TempData[TempDataKeys.HandledErrorMessage] != null)
+﻿@using ShortlistManager.Web.Infrastructure
+@if (TempData[TempDataKeys.HandledErrorMessage] != null)
 {
     var msg = TempData[TempDataKeys.HandledErrorMessage].ToString();
 

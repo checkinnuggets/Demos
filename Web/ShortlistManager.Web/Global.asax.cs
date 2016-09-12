@@ -30,7 +30,6 @@ namespace ShortlistManager.Web
         protected void Application_Error()
         {
             // TODO (GG): fixup - this catches all exceptions
-
             var exception = Server.GetLastError();
             var httpException = exception as HttpException;
             Response.Clear();

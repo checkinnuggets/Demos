@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ShortlistManager.Web
+namespace ShortlistManager.Web.Infrastructure.ErrorHandling
 {
     public class ValidationException : ApplicationException
     {

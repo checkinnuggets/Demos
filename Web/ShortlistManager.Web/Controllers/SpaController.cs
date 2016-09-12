@@ -5,6 +5,7 @@ using System.Web.Mvc;
 using ShortlistManager.Services;
 using ShortlistManager.Services.Models;
 using ShortlistManager.Web.Infrastructure.Auth;
+using ShortlistManager.Web.Infrastructure.ErrorHandling;
 
 namespace ShortlistManager.Web.Controllers
 {
